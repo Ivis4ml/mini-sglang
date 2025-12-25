@@ -91,6 +91,21 @@ mini-sglang/
 - FlashAttention/FlashInfer 集成
 - 性能调优建议
 
+### Module 9: 深度设计分析
+**文件**: `notebooks/09_deep_analysis.ipynb`
+
+- page_size=1 的设计决策分析
+- 残差连接融合 (RMSNormFused)
+- CUDA Graph Pool 内存复用机制
+- Batch Padding 策略与效率
+- 采样温度处理细节
+- 多进程通信架构 (ZMQ)
+- 二级内存管理设计
+- GQA (Grouped Query Attention) 支持
+- Stream 同步与 Overlap 调度
+- Weight Tying 节省内存
+- NVTX Profiling 性能分析
+
 ## 在 Google Colab 中使用
 
 ### 方法 1: 直接打开
@@ -155,6 +170,7 @@ jupyter notebook learning_guide/notebooks/
 1. **入门**: Module 1-2 (理解基本概念)
 2. **进阶**: Module 3-5 (深入核心组件)
 3. **高级**: Module 6-8 (掌握优化技术)
+4. **深入**: Module 9 (设计决策和实现细节)
 
 ## 动手实践建议
 
