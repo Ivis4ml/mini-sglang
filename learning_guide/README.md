@@ -27,6 +27,18 @@ mini-sglang/
 
 ## 学习路径
 
+### Module 0: PyTorch 前置知识 (新增!)
+**文件**: `notebooks/00_pytorch_prerequisites.ipynb`
+
+- Tensor 基础操作 (创建、索引、形状变换)
+- CUDA 设备管理与同步
+- **CUDA Stream** (Overlap Scheduling 的基础)
+- **CUDA Graph** (Decode 加速的关键)
+- nn.Module 模型结构
+- torch.distributed 分布式通信
+- 内存管理 (Pinned Memory, Contiguous)
+- 数据类型 (bfloat16)
+
 ### Module 1: LLM 推理基础
 **文件**: `notebooks/01_llm_inference_basics.ipynb`
 
@@ -167,6 +179,7 @@ jupyter notebook learning_guide/notebooks/
 
 ### 推荐阅读顺序
 
+0. **前置**: Module 0 (PyTorch 基础，如已熟悉可跳过)
 1. **入门**: Module 1-2 (理解基本概念)
 2. **进阶**: Module 3-5 (深入核心组件)
 3. **高级**: Module 6-8 (掌握优化技术)
